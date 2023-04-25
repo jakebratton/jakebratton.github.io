@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Quattrocento&display=swap');
+/* Accent: #f9ba9c */
+body {
+  margin: 0px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #38761d;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.nav {
+  color: #f3f3f3;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Quattrocento;
+}
+
+.nav:hover {
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+}
+
+.section {
+  margin: 20px;
+}
+
+h1 {
+  color: #38761d;
+  text-decoration: underline;
+  font-family: Quattrocento;
+  font-size: 36px;
+}
+
+img {
+  float: right;
+  width: 150px;
+}
+
+p, li {
+  font-family: Fanwood Text;
+  font-size: 18px;
+  color: #2d2d2d;
+  margin: 0px;
+}
+
+.footer {
+  background-color: #e66738;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  justify-self: flex-end;
+}
+
+.footerText {
+  color: #f3f3f3;
+  text-align: center;
+  margin: 0px;
+  font-family: Quattrocento;
+  font-size: 16px;
+}

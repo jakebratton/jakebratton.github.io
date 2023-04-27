@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <div class="header">
+    <header>
+      <div class="navBar">
         <a href="index.html" class="nav">
           Home
         </a>
@@ -23,12 +24,43 @@
           Contact
         </a>
       </div>
-      <div class="main">
+      <h3>Email: jakebratton28@gmail.com</h3>
+    </header>
+    <main>
+      <h2>Contact Me</h2>
+      <div class="row">
+        <a href="https://github.com/jakebratton28">
+          <img src="images/github_icon.png" alt="test image" class="icon"/>
+        </a>
+        <a href="https://www.linkedin.com/in/jacob-bratton-593bb420b/">
+          <img src="images/linkedin_icon.png" alt="test image" class="icon"/>
+        </a>
       </div>
-      <div class="footer">
-        <p class="footerText">Jacob Bratton</p>
-        <p class="footerText">jakebratton28@gmail.com</p>
+      <div class="middle">
+        <form action="">
+          <label for="name">Name*:</label><br>
+          <input type="text" required id="name" name="name" class="input" placeholder="Your name here..."><br>
+          <label for="email">Email Address*:</label><br>
+          <input type="email" required id="email" name="email" class="input" placeholder="Your email here..."><br>
+          <label for="reason">Reason for contact:</label><br>
+          <input type="radio" id="first" name="reason" value="First">
+          <label for="first">First</label><br>
+          <input type="radio" id="second" name="reason" value="Second">
+          <label for="second">Second</label><br>
+          <input type="radio" id="third" name="reason" value="Third" class="bottom">
+          <label for="third">Third</label><br>
+          <label for="message" class="message">Message*:</label><br>
+          <textarea rows="5" required name="message" placeholder="Your message here..."></textarea>
+          <div class="row">
+            <button type="submit">SUBMIT</button>
+          </div>
+        </form>
       </div>
+    </main>
+    <footer>
+      <p class="footerText">Jacob Bratton</p>
+      <p class="footerText">jakebratton28@gmail.com</p>
+    </footer>
 </body>
 
 </html>

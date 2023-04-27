@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Quattrocento&display=swap');
-/* Accent: #f9ba9c */
+
 body {
   margin: 0px;
   background-color: #f3f3f3;
@@ -8,9 +8,9 @@ body {
   min-height: 100vh;
 }
 
-.header {
+header {
   background-color: #38761d;
-  height: 125px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -25,17 +25,23 @@ body {
   font-family: Quattrocento;
 }
 
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .nav:hover, .current {
   text-decoration: underline;
 }
 
-.main {
+main {
   flex: 1;
 }
 
 .section {
   margin: 20px;
-  min-height: 150px;
+  min-height: 200px;
 }
 
 h1 {
@@ -53,9 +59,14 @@ h2 {
     text-align: center;
 }
 
-img {
+h3 {
+  display: none;
+}
+
+.picture {
   float: right;
   width: 150px;
+  min-height: 125px;
 }
 
 p, li {
@@ -85,9 +96,91 @@ p {
     color: #e66738;
 }
 
-.footer {
+.button:hover {
   background-color: #e66738;
-  height: 100px;
+  color: #f3f3f3;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 50px;
+  margin: 0px 10px;
+  height: 50px;
+}
+
+.middle {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 60%;
+}
+
+label {
+  font-family: Fanwood Text;
+  font-size: 20px;
+}
+
+.input {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: Fanwood Text;
+  font-size: 20px;
+}
+
+textarea {
+  width: 100%;
+  font-family: Fanwood Text;
+  font-size: 20px;
+}
+
+.message {
+  margin-top: 20px;
+}
+
+.bottom {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 50%;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-width: 2px;
+  border-color: #e66738;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 5px;
+  color: #e66738;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #f9ba9c;
+  border-color: #f9ba9c;
+}
+
+.findme {
+  display: none;
+}
+
+.findmeProjects {
+  display: none;
+  width: 50%;
+}
+
+footer {
+  background-color: #e66738;
+  height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,4 +195,89 @@ p {
   margin: 0px;
   font-family: Quattrocento;
   font-size: 16px;
+}
+
+@media screen and (min-width: 625px) {
+  h2 {
+    margin: 10px 0px;
+  }
+
+  .outerSection {
+    display: flex;
+    margin: 0px;
+  }
+
+  .findme {
+    display: inline;
+    width: 50%;
+  }
+
+  .section {
+    margin: 0px 20px;
+  }
+
+  .icons {
+    justify-content: flex-start;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 775px) {
+  .topOuterSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section {
+    width: 50%;
+  }
+
+  .findmeProjects {
+    display: inline;
+  }
+
+  header {
+    background-color: #38761d;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav {
+    margin: 0px 10px;
+  }
+
+  h3 {
+    display: block;
+    color: #f3f3f3;
+    font-family: Quattrocento;
+  }
+
+  footer {
+    height: 20px;
+  }
+
+  .footerText {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  footer {
+    margin-top: 0px;
+  }
+
+  h2 {
+    margin: 20px 0px;
+  }
 }

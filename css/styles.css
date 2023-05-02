@@ -27,8 +27,9 @@ header {
 
 .navBar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 
 .nav:hover, .current {
@@ -173,9 +174,19 @@ button:hover {
   display: none;
 }
 
+.findmeOn {
+  display: none;
+}
+
 .findmeProjects {
   display: none;
   width: 50%;
+}
+
+.iconContact {
+  width: 75px;
+  margin: 0px 20px;
+  height: 75px;
 }
 
 footer {
@@ -198,13 +209,26 @@ footer {
 }
 
 @media screen and (min-width: 625px) {
+  .contactMe {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  
+  .mePicture {
+    width: 300px;
+    justify-self: center;
+  }
+
   h2 {
     margin: 10px 0px;
   }
 
   .outerSection {
     display: flex;
-    margin: 0px;
+  }
+
+  .projects {
+    margin-top: 20px;
   }
 
   .findme {
@@ -219,6 +243,78 @@ footer {
   .icons {
     justify-content: flex-start;
   }
+  
+  .middle {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0px;
+  }
+  
+  .icon {
+  width: 75px;
+  margin: 0px 20px;
+  height: 75px;
+}
+  
+label {
+  margin-left: 10%;
+  font-family: Fanwood Text;
+  font-size: 24px;
+}
+
+.input {
+  height: 25px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-family: Fanwood Text;
+  font-size: 24px;
+}
+
+textarea {
+  margin-left: 10%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 80%;
+  font-family: Fanwood Text;
+  font-size: 24px;
+  height: 60%;
+}
+  
+  .radio {
+    margin-left: 10%;
+    margin-right: -8%;
+  }
+
+.message {
+  margin-top: 20px;
+}
+
+.bottom {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 50%;
+  height: 50px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  border-width: 2px;
+  border-color: #e66738;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 5px;
+  color: #e66738;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #f9ba9c;
+  border-color: #f9ba9c;
+}
 
   footer {
     margin-top: 20px;
@@ -226,6 +322,20 @@ footer {
 }
 
 @media screen and (min-width: 775px) {
+  .navBar {
+    width: auto;
+  }
+
+  .iconBig {
+    width: 100px;
+    margin: 30px 10px;
+    height: 100px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
   .topOuterSection {
     display: flex;
     justify-content: center;
@@ -263,6 +373,29 @@ footer {
     font-family: Quattrocento;
   }
 
+  form {
+    display: flex;
+    justify-content: space-around;
+    justify-self: flex-start;
+    width: 67%;
+  }
+
+  .findmeOn {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nameArea {
+    width: 50%;
+    height: 65%;
+  }
+  
+  .messageArea {
+    width: 50%;
+    justify-content: center;
+  }
+
   footer {
     height: 20px;
   }
@@ -275,9 +408,5 @@ footer {
 @media screen and (min-width: 1130px) {
   footer {
     margin-top: 0px;
-  }
-
-  h2 {
-    margin: 20px 0px;
   }
 }
